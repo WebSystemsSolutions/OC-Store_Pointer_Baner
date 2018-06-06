@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+    <id>banner_points</id>
+    <version>1</version>
+    <vqmver required="true">2.4.0</vqmver>
+    <author>Sergo</author>
+    <file path="admin/view/template/common/" name="filemanager.tpl">
+        <operation error="skip">
+            <search position="before" index="1"><![CDATA[<?php if ($thumb) { ?>]]></search>
+            <add><![CDATA[
+                if($(this).closest('.modal').hasClass('catalog-points-image')){
+                        <?php if ($thumb) { ?>
+                        $('#<?php echo $thumb; ?>').find('img').attr('src', '/image/'+$(this).parent().find('input').attr('value'));
+                        <?php } ?>
+
+                        $('#<?php echo $target; ?>').attr('value', $(this).parent().find('input').attr('value'));
+                    }else{
+            ]]></add>
+        </operation>
+        <operation error="skip">
+            <search position="before" index="1"><![CDATA[$('#modal-image').modal('hide');]]></search>
+            <add><![CDATA[
+                }
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/controller/common/" name="menu.php">
+        <operation error="skip">
+            <search position="after" index="1"><![CDATA[$data['banner'] = $this->url->link('design/banner', 'token=' . $this->session->data['token'], 'SSL');]]></search>
+            <add><![CDATA[
+                $data['banner_points'] = $this->url->link('design/banner_points', 'token=' . $this->session->data['token'], 'SSL');
+            ]]></add>
+        </operation>
+    </file>
+    <file path="admin/view/template/common/" name="menu.tpl">
+        <operation error="skip">
+            <search position="after" index="1"><![CDATA[<li><a href="<?php echo $banner; ?>"><?php echo $text_banner; ?></a></li>]]></search>
+            <add><![CDATA[
+                <li><a href="<?php echo $banner_points; ?>">Точечнный баннер</a></li>
+            ]]></add>
+        </operation>
+    </file>
+</modification>
