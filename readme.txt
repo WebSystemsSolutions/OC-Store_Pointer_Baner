@@ -1,4 +1,4 @@
-- [RU]
+-[RU]
 Модуль предназначен для более информативного представления банеров в виде слайдшоу с активными маркерами.
 
 Для установки модуля необходимо:
@@ -14,7 +14,7 @@ http://joxi.ru/a2XXe6XiyYoLM2
 - http://prntscr.com/jrn7iy
 - http://prntscr.com/jrnbry 
 
-- [UA]
+-[UA]
 Модуль призначений для більш інформативного представлення банерів у вигляді слайд-шоу з активними маркерами.
 
 Для установки модуля необхідно:
@@ -30,7 +30,7 @@ http://joxi.ru/a2XXe6XiyYoLM2
 - http://prntscr.com/jrn7iy
 - http://prntscr.com/jrnbry
 
-- [ENG]
+-[ENG]
 The module is designed for a more informative presentation of banners in the form of a slideshow with active markers.
 
 To install the module you need:
