@@ -29,6 +29,7 @@ http://joxi.ru/a2XXe6XiyYoLM2
 Готовий банер з маркерами на сайті (скріншоти):
 - http://prntscr.com/jrn7iy
 - http://prntscr.com/jrnbry
+
 - [ENG]
 The module is designed for a more informative presentation of banners in the form of a slideshow with active markers.
 
